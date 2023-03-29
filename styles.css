@@ -141,8 +141,10 @@ h1 {
 .container {
   display: flex;
   flex-wrap: wrap;
+  gap: 1px;
 }
 
 .content {
-  flex-basis: 6.25%;
+  flex-basis: 6%;
 }
+

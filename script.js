@@ -3,6 +3,11 @@ const audioContext = new AudioContext();
 
 // select display div
 const display = document.querySelector('.container')
+// select the new button
+const newBoard = document.querySelector('#newBoard')
+newBoard.addEventListener('click',()=> { aNum = Number(window.prompt("Enter board size", ""))
+  return aNum
+})
 
 //loop through and add color/waveforms
 for (let i = 1; i < 257; i++) {

@@ -4,13 +4,17 @@ const audioContext = new AudioContext();
 // select display div
 const display = document.querySelector('.container')
 // select the new button
+
 const newBoard = document.querySelector('#newBoard')
-newBoard.addEventListener('click',()=> { aNum = Number(window.prompt("Enter board size", ""))
-  return aNum
+newBoard.addEventListener('click',()=> {  aNum = Number(window.prompt("Enter board size", "")),
+createBoard(aNum)
 })
 
+
+
+let createBoard = (aNum) => {
 //loop through and add color/waveforms
-for (let i = 1; i < 257; i++) {
+for (let i = 1; i < aNum; i++) {
   let square = document.createElement('div')
   square.classList.add('content')
   square.textContent = ' ';
@@ -54,3 +58,8 @@ for (let i = 1; i < 257; i++) {
   })
   display.appendChild(square);
 }
+}
+
+createBoard()
+
+

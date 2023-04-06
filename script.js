@@ -14,7 +14,7 @@ createBoard(aNum)
 
 let createBoard = (aNum) => {
 //loop through and add color/waveforms
-for (let i = 1; i < aNum; i++) {
+for (let i = 0; i < aNum; i++) {
   let square = document.createElement('div')
   square.classList.add('content')
   square.textContent = ' ';

@@ -134,18 +134,26 @@ table {
   border-spacing: 0;
 }
 
+:root {
+  --aNum: 0;
+}
+
 h1 {
   color: blue;
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1px;
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      height: auto;
 }
 
 .content {
-  flex-basis: 6%;
+  flex: 0 0 auto;
+  flex-basis: calc(100% / var(--aNum));
+  width: 1em;
   height: 1em;
-  width: auto;
 }

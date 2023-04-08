@@ -146,20 +146,30 @@ h1 {
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    min-width: .05em;
-    max-width: auto;
-    max-height: auto;
-    border: red 2em solid;
-    border-radius: 5%;
-    margin: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: .05em;
+  max-width: auto;
+  max-height: auto;
+  border: rgb(189, 12, 12) 2em solid;
+  background-color: rgb(158, 158, 158);
+  border-radius: 5%;
+  margin: 3em;
 }
 
 .content {
   flex-basis: calc(100% / var(--aNum));
   width: .05em;
   height: .5em;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  width: inherit;
+  justify-content: space-between;
+  
+  width: auto;
 }

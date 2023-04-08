@@ -4,7 +4,7 @@ const audioContext = new AudioContext();
 const display = document.querySelector('.container')
 // select the new button
 const newBoard = document.querySelector('#newBoard')
-newBoard.addEventListener('click',()=> {  aNum = Number(window.prompt("Enter board size", "")),
+newBoard.addEventListener('click',()=> {  aNum = Number(window.prompt("Enter a number", "")),
 createBoard(aNum * aNum)
 })
 

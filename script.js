@@ -24,7 +24,7 @@ let createBoard = (aNum) => {
     r.style.setProperty('--aNum', Math.sqrt(aNum));
     square.classList.add('content')
     square.textContent = ' ';
-    square.addEventListener('mouseover', (e) => {
+    square.addEventListener('mouseover',  (e) => {
       let r = Math.random() * 256 | 0;
       let g = Math.random() * 256 | 0;
       let b = Math.random() * 256 | 0;

@@ -150,22 +150,16 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  min-width: .05em;
-  max-width: auto;
-  max-height: auto;
   border: rgb(189, 12, 12) 3.5em solid;
   background-color: rgb(158, 158, 158);
   border-radius: 1%;
 }
-
 
 .content {
   flex-basis: calc(100% / var(--aNum));
   width: .05em;
   height: .5em;
 }
-
-
 
 button {
   border-radius: 100%;
@@ -175,18 +169,10 @@ button {
 
 .wrapper {
   position: relative;
-  bottom: 3.2em;
+  bottom: 3.2em; 
   display: flex;
+  width: inherit !important;
   justify-content: space-between;
+  margin: 0 1em 0 1em;
   flex-basis: 100%;
-}
-
-.spin {
-    animation: mymove 5s infinite;
-    }
-    
-    @keyframes mymove {
-      50% {
-        transform: rotate(180deg);
-      }
 }

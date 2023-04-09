@@ -8,9 +8,7 @@ newBoard.addEventListener('click',()=> {  aNum = Number(window.prompt("Enter a n
 createBoard(aNum * aNum)
 })
 
-// use this for animation to flip the board 180 possibly a hover
-// let contents = document.querySelector('container');
-//   contents.classList.add('spin');
+
 let createBoard = (aNum) => {
   //loop through and add color/waveforms
   for (let i = 0; i < aNum; i++) {
@@ -64,6 +62,13 @@ let createBoard = (aNum) => {
   }
   
 }
+
+// let contents = document.querySelector('.container');
+// contents.addEventListener('mouseover', () => {
+//   contents.classList.add('spin');
+//   console.log("hell yeah")
+// })
+
 
 createBoard()
 

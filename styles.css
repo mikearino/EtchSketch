@@ -142,8 +142,13 @@ table {
 }
 
 h1 {
-  color: blue;
+  position: relative;
+  color: rgb(212, 154, 9);
   text-align: center;
+  top: 1.8em;
+  font-family: 'Cedarville Cursive', cursive;
+  font-weight: 900;
+  font-size: 1.5em;
 }
 
 .container {

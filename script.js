@@ -10,8 +10,12 @@ createBoard(aNum * aNum)
 boardDisplay.style.visibility = 'visible'
 })
 
-
 let createBoard = (aNum) => {
+ Array.from(display.children).forEach(child => {
+  if (child.tagName === "DIV") {
+    display.removeChild(child);
+  }
+});
   //loop through and add color/waveforms
   for (let i = 0; i < aNum; i++) {
     let square = document.createElement('div')
@@ -25,9 +29,7 @@ let createBoard = (aNum) => {
       let g = Math.random() * 256 | 0;
       let b = Math.random() * 256 | 0;
       square.style.cssText = `background-color: rgb(${r},${g},${b})`;
-      
-      console.log(square)
-      
+  
       //waveform generation
       let f = parseInt(Math.floor(Math.random() * 4) + 1);
       square.classList.add(f);
@@ -61,10 +63,7 @@ let createBoard = (aNum) => {
       }, 100);
     })
     display.appendChild(square);
-  }
-  
+  } 
 }
-
-createBoard()
 
 

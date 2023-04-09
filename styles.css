@@ -180,3 +180,13 @@ button {
   justify-content: space-between;
   flex-basis: 100%;
 }
+
+.spin {
+    animation: mymove 5s infinite;
+    }
+    
+    @keyframes mymove {
+      50% {
+        transform: rotate(180deg);
+      }
+}

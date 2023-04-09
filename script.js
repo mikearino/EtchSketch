@@ -4,8 +4,10 @@ const audioContext = new AudioContext();
 const display = document.querySelector('.container')
 // select the new button
 const newBoard = document.querySelector('#newBoard')
+const boardDisplay = document.querySelector('.fullWrapper')
 newBoard.addEventListener('click',()=> {  aNum = Number(window.prompt("Enter a number", "")),
 createBoard(aNum * aNum)
+boardDisplay.style.visibility = 'visible'
 })
 
 
@@ -62,13 +64,6 @@ let createBoard = (aNum) => {
   }
   
 }
-
-// let contents = document.querySelector('.container');
-// contents.addEventListener('mouseover', () => {
-//   contents.classList.add('spin');
-//   console.log("hell yeah")
-// })
-
 
 createBoard()
 

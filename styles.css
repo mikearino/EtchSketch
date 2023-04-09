@@ -112,6 +112,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1em;
+  background-color: rgb(79, 29, 185);
 }
 
 ol,
@@ -156,7 +158,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border: rgb(189, 12, 12) 3.5em solid;
+  border: rgb(189, 12, 12) 4em solid;
   background-color: rgb(158, 158, 158);
   border-radius: 1%;
 }
@@ -167,18 +169,45 @@ h1 {
   height: .5em;
 }
 
-button {
-  border-radius: 100%;
-  height: 3.5em;
-  width: 3.5em;
+#newBoard {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(212, 154, 9);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#newBoard:hover {
+  background-color: #e24e1d;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
 }
 
 .wrapper {
   position: relative;
-  bottom: 3.2em; 
+  bottom: 3.6em; 
   display: flex;
   width: inherit !important;
   justify-content: space-between;
   margin: 0 1em 0 1em;
   flex-basis: 100%;
+}
+
+.knobs {
+  border-radius: 100%;
+    height: 3.5em;
+    width: 3.5em;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
+    border: none;
+    background-color: antiquewhite
+}
+
+.fullWrapper {
+  visibility: hidden;
 }

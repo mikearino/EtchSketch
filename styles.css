@@ -160,7 +160,8 @@ h1 {
   align-items: center;
   border: rgb(189, 12, 12) 4em solid;
   background-color: rgb(158, 158, 158);
-  border-radius: 1%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgb(0, 0, 0);
 }
 
 .content {
@@ -175,7 +176,7 @@ h1 {
   border: none;
   border-radius: 30px;
   background-color: rgb(212, 154, 9);
-  color: #fff;
+  color: antiquewhite;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;

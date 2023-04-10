@@ -66,5 +66,3 @@ let createBoard = (aNum) => {
     display.appendChild(square);
   } 
 }
-
-

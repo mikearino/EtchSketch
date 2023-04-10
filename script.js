@@ -35,6 +35,8 @@ let createBoard = (aNum) => {
       square.classList.add(f);
       let o = audioContext.createOscillator();
       let ga = audioContext.createGain();
+      ga.gain.value = 0.03;
+      
       
       //if class list's number is 1-4 change the waveform
       if (e.target.classList[1] == 1) {

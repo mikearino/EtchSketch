@@ -170,6 +170,29 @@ h1 {
   height: .5em;
 }
 
+.fullWrapper {
+  visibility: hidden;
+}
+
+.knobs {
+  border-radius: 100%;
+    height: 3.5em;
+    width: 3.5em;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
+    border: none;
+    background-color: rgb(241, 213, 177)
+}
+
+.wrapper {
+  position: relative;
+  bottom: 3.6em; 
+  display: flex;
+  width: inherit !important;
+  justify-content: space-between;
+  margin: 0 1em 0 1em;
+  flex-basis: 100%;
+}
+
 #newBoard {
   display: inline-block;
   padding: 10px 20px;
@@ -188,27 +211,4 @@ h1 {
   background-color: #e24e1d;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
-}
-
-.wrapper {
-  position: relative;
-  bottom: 3.6em; 
-  display: flex;
-  width: inherit !important;
-  justify-content: space-between;
-  margin: 0 1em 0 1em;
-  flex-basis: 100%;
-}
-
-.knobs {
-  border-radius: 100%;
-    height: 3.5em;
-    width: 3.5em;
-    box-shadow: 0px 4px 10px rgb(0, 0, 0);
-    border: none;
-    background-color: rgb(241, 213, 177)
-}
-
-.fullWrapper {
-  visibility: hidden;
 }

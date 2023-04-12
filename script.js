@@ -29,7 +29,7 @@ let createBoard = (aNum) => {
       let g = Math.random() * 256 | 0;
       let b = Math.random() * 256 | 0;
       square.style.cssText = `background-color: rgb(${r},${g},${b})`;
-  
+      
       //waveform generation
       let f = parseInt(Math.floor(Math.random() * 4) + 1);
       square.classList.add(f);
@@ -66,3 +66,4 @@ let createBoard = (aNum) => {
     display.appendChild(square);
   } 
 }
+
